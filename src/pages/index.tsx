@@ -15,7 +15,7 @@ export default function SignIn() {
         maxW={360}
         bg="gray.800"
         p="8"
-        borderRadius={8}
+        borderRadius="md"
         flexDir="column"
       >
         <Stack spacing="4">
