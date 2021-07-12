@@ -10,8 +10,10 @@ type SignInFormData = {
 }
 
 const signInFormSchema = yup.object().shape({
-  email: yup.string().required('Email is mandatory').email('Invalid email'),
-  password: yup.string().required('Password is mandatory')
+  // leave blank for default message or add custom error message
+  // email: yup.string().required('custom sentence goes here...').email('...and here'),
+  email: yup.string().required().email(),
+  password: yup.string().required()
 })
 
 export default function SignIn() {
